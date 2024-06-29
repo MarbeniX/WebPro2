@@ -1,0 +1,36 @@
+#main-container {
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 70%;
+    padding: 20px;
+}
+
+#tablaTrabajadores {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#tablaTrabajadores th,
+#tablaTrabajadores td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#tablaTrabajadores th {
+    background-color: #4fafe7;
+    color: white;
+    text-align: center;
+}
+
+#tablaTrabajadores tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tablaTrabajadores tr:hover {
+    background-color: #ddd;
+}

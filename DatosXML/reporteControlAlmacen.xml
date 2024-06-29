@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ReporteControlAlmacen>
+        <id></id>
+        <cliente_id></cliente_id>
+        <fecha_servicio></fecha_servicio>
+        <tipo_servicio></tipo_servicio>
+        <costo_asociado></costo_asociado>
+        <material></material>
+        <cantidad></cantidad>
+        <precio_unitario></precio_unitario>
+        <total></total>
+</ReporteControlAlmacen>

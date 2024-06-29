@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#searchBar {
+    background-color: #4fafe7;
+    display: flex;
+    height: 100px; /* Reducido de 162px a 100px */
+    align-items: center;
+    justify-content: center; /* Centro horizontal */
+    position: relative;
+}
+
+#aquafixlogo {
+    width: 100px; /* Reducido */
+    height: 100px; /* Reducido */
+    position: absolute;
+    left: 10px; /* Ajustado para mantener la posición relativa */
+}
+
+#titulo {
+    flex-grow: 1; /* Hace que el título ocupe el espacio restante */
+    text-align: center; /* Centro horizontal */
+}
+
+#titulo h1 {
+    margin: 0;
+    font-size: 2em; /* Ajusta el tamaño según sea necesario */
+}
+
+#formularioServicio {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+#formularioServicio h1, #formularioServicio h2 {
+    text-align: center;
+}
+
+#servicioForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#servicioForm label {
+    font-weight: bold;
+}
+
+#servicioForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#servicioForm button {
+    padding: 10px;
+    background-color: #4fafe7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#servicioForm button:hover {
+    background-color: #05726B;
+}

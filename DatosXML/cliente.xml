@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<Clientes>
+        <Cliente>
+            <id>C1</id>
+            <nombre>Hector</nombre>
+            <apPaterno>Perez</apPaterno>
+            <apMaterno>Garcia</apMaterno>
+            <direccion>Av. 5 de Mayo 30</direccion>
+            <CP>07440</CP>
+            <Delegacion>Gustavo A. Madero</Delegacion>
+            <zona_id>Noroeste de CDMX</zona_id>
+            <telefono>1245788923</telefono>
+            <email>HectorP@cliente.com</email>
+            <Contraseña>HectorP</Contraseña>
+        </Cliente>
+        <Cliente>
+            <id>C2</id>
+            <nombre>Laura</nombre>
+            <apPaterno>Martinez</apPaterno>
+            <apMaterno>Lopez</apMaterno>
+            <direccion>Av. Insurgentes 123</direccion>
+            <CP>11000</CP>
+            <Delegacion>Miguel Hidalgo</Delegacion>
+            <zona_id>Noreste de CDMX</zona_id>
+            <telefono>5551234567</telefono>
+            <email>LauraM@cliente.com</email>
+            <Contraseña>LauraM</Contraseña>
+        </Cliente>
+        <Cliente>
+            <id>C3</id>
+            <nombre>Carlos</nombre>
+            <apPaterno>Gonzalez</apPaterno>
+            <apMaterno>Hernandez</apMaterno>
+            <direccion>Calle Reforma 456</direccion>
+            <CP>12000</CP>
+            <Delegacion>Milpa Alta</Delegacion>
+            <zona_id>Suroeste de CDMX</zona_id>
+            <telefono>5557654321</telefono>
+            <email>CarlosG@cliente.com</email>
+            <Contraseña>CarlosG</Contraseña>
+        </Cliente>
+        <Cliente>
+            <id>C4</id>
+            <nombre>Ana</nombre>
+            <apPaterno>Fernandez</apPaterno>
+            <apMaterno>Ramirez</apMaterno>
+            <direccion>Calle Juarez 789</direccion>
+            <CP>13000</CP>
+            <Delegacion>Tlahuac</Delegacion>
+            <zona_id>Suroeste de CDMX</zona_id>
+            <telefono>5556789123</telefono>
+            <email>AnaF@cliente.com</email>
+            <Contraseña>AnaF</Contraseña>
+        </Cliente>
+        <Cliente>
+            <id>C5</id>
+            <nombre>Mario</nombre>
+            <apPaterno>Sanchez</apPaterno>
+            <apMaterno>Diaz</apMaterno>
+            <direccion>Av. Constituyentes 101</direccion>
+            <CP>14000</CP>
+            <Delegacion>Tlalpan</Delegacion>
+            <zona_id>Sureste de CDMX</zona_id>
+            <telefono>5553456789</telefono>
+            <email>MarioS@cliente.com</email>
+            <Contraseña>MarioS</Contraseña>
+        </Cliente>
+</Clientes>

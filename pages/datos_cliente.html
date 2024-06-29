@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AguaFix</title>
+    <link rel="stylesheet" href="../styles/principal.css">
+    <link rel="stylesheet" href="../styles/datosclt.css">
+</head> 
+<body>
+    <div id="searchBar">
+        <img id="aquafixlogo" src="/images/aquafixlogo.png" alt="AquaFixLogo" height="254.1" width="227.35">
+        <div id="mediaBar">
+            <div id="about">
+                <div class="dropdown">
+                    <button id="conocenos-boton" class="dropbtn"><a href="/pages/quienessomos.html">Conocenos</a></button>
+                    <img class="imgFlecha" src="/images/flechaBotonDrop.png" alt="flechaBotonDrop">
+                </div>
+        
+                <div class="dropdown">
+                    <button id="servicios-boton" class="dropbtn"><a href="/pages/Mapa.php">Servicios</a></button>
+                    <img class="imgFlecha" src="/images/flechaBotonDrop.png" alt="flechaBotonDrop">
+                </div>
+                
+                <div class="dropdown">
+                    <button id="login-cliente" class="dropbtn"><a href="/index.html">Iniciar sesión</a></button>
+                    <img class="imgFlecha" src="/images/flechaBotonDrop.png" alt="flechaBotonDrop">
+                </div>
+            </div>
+    
+            <div id="socialLinks">
+                <div class="socialIcon" id="igLogo">
+                    <img src="/images/iglogo.png" alt="instagram logo" height="17.07" width="17.07">
+                </div>
+                <div class="socialIcon" id="sportLogo">
+                    <img src="/images/sportlogo.png" alt="sports logo" height="17.07" width="17.07">
+                </div>
+                <div class="socialIcon" id="twitterLogo">
+                    <img src="/images/twitterlogo.png" alt="twitter logo" height="17.07" width="17.07">
+                </div>
+                <div class="socialIcon" id="youtubeLogo">
+                    <img src="/images/youtubelogo.png" alt="youtube logo" height="17.07" width="17.07">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1>Datos de Servicio</h1>
+    </header>
+    <main>
+        <section class="datos-cliente">
+            <h2>Datos del Cliente</h2>
+            <form action="#">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"  placeholder="Ingresa tu nombre">
+                </div>
+                <div class="campo">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos"  maxlength="30"  placeholder="Ingresa tus apellidos">
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfonos:</label>
+                    <input type="tel" id="telefono" name="telefono"  maxlength="30"reqired placeholder="Ingresa tu número de teléfono">
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"  maxlength="20" placeholder="Ingresa tu correo electrónico">
+                </div>
+                <div class="campo">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" >
+                </div>
+                <div class="campo">
+                    <label for="direccion">Dirección:</label>
+                    <input id="direccion" name="direccion"   maxlength="150" placeholder="Ingresa tu dirección">
+                </div>
+                <button type="submit"><a href="/pages/solicitudes_servicios.html">Seguir Solicitud</a></button>  
+            </form>
+        </section>
+    </main>  
+</body>
+</html>

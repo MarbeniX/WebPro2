@@ -1,0 +1,71 @@
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.datos-cliente form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.datos-cliente button a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+.campo input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; 
+}
+
+.campo button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .datos-cliente form {
+    width: 90%; 
+    padding: 10px; s 
+  }
+
+  .campo {
+    margin-bottom: 10px; 
+  }
+
+  .campo input[type="text"],
+  .campo input[type="email"],
+  .campo input[type="tel"],
+  .campo input[type="date"] {
+    padding: 6px; 
+  }
+
+  .campo button {
+    padding: 8px 16px; 
+  }
+}

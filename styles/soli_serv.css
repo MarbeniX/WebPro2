@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#searchBar {
+    background-color: #4fafe7;
+    display: flex;
+    height: 162px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#aquafixlogo {
+    width: 200px;
+    height: 220px;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+}
+
+#titulo {
+    position: relative;
+}
+
+#secc_servicios {
+    text-align: center;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: -40%;
+}
+
+#secc_servicios h2 {
+    display: inline-block; /* Hace que el h2 ocupe solo el espacio necesario */
+    padding: 10px 20px;    /* Ajusta el relleno según sea necesario */
+    background-color: #4fafe7; /* Mantiene el fondo azul */
+    border-radius: 10px; /* Mantiene las esquinas redondeadas */
+    margin-bottom: 20px; /* Añade un margen inferior para separar el h2 del contenido siguiente */
+    width: 750px; /* Establece un ancho personalizado */
+    height: 50px; /* Establece un alto personalizado */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    line-height: 50px; /* Alinea verticalmente el texto */
+}
+
+.elemServicios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servicio {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.servicio h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.servicio input[type="checkbox"] {
+    background-color: #4fafe7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#detalle_solicitud {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 300px;
+    position: absolute;
+    right: 10%;
+    top: 200px;
+}
+
+#detalle_solicitud h2 {
+    background-color: #4fafe7;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.detalle_item {
+    background-color: #f0f0f0; /* Espacio grande en gris */
+    height: 300px; 
+    margin-bottom: 20px;
+}
+
+#total {
+    background-color: #4fafe7;
+    color: black;
+    padding: 1px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#confirmarSolicitud {
+    display: block;
+    margin: 20px auto;
+    background-color: #4fafe7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#confirmarSolicitud a {
+    text-decoration: none;
+    color: black;
+}

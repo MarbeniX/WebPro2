@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#searchBar {
+    background-color: #4fafe7;
+    display: flex;
+    height: 162px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#aquafixlogo {
+    width: 200px;
+    height: 220px;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+}
+
+#titulo {
+    position: relative;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zone-selection, .time-selection, .delegation-selection, .cp-selection, .direccion-selection {
+    margin: 20px 0;
+    text-align: center;
+}
+
+select, input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: lightgray;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button.selected {
+    background-color: #007BFF;
+    color: white;
+}
+
+button.submit-btn {
+    background-color: #007BFF;
+    color: white;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.map-image {
+    margin: 20px 0;
+}
+
+.map-image img {
+    max-width: 100%;
+    height: auto;
+}

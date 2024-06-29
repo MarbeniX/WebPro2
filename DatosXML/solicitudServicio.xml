@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<SolicitudServicio>
+    <SolicitudesServicio>
+        <id>0</id>
+        <cliente_id/>
+        <zona/>
+        <codigo_postal/>
+        <delegacion/>
+        <direccion/>
+        <hora/>
+        <fecha/>
+        <Servicio>
+            <id>S1</id>
+            <nombre>Reparacion</nombre>
+            <descripcion>Reparacion de Fuga de Gas</descripcion>
+            <precio>1000.00</precio>
+        </Servicio>
+        <Servicio>
+            <id>S2</id>
+            <nombre>Limpieza</nombre>
+            <descripcion>Limpieza de Tinacos</descripcion>
+            <precio>1200.00</precio>
+        </Servicio>
+        <Servicio>
+            <id>S3</id>
+            <nombre>Instalacion</nombre>
+            <descripcion>Cambio de Filtro de Tinaco</descripcion>
+            <precio>800.00</precio>
+        </Servicio>
+        <total/>
+    </SolicitudesServicio>
+<SolicitudesServicio><id>1</id><cliente_id>C1</cliente_id><zona>Noroeste de CDMX</zona><codigo_postal>07440</codigo_postal><delegacion>Gustavo A. Madero</delegacion><direccion>Av. 5 de Mayo 30</direccion><hora>11:00am-12:00pm</hora><fecha>2024-06-29</fecha><total>1000</total></SolicitudesServicio></SolicitudServicio>

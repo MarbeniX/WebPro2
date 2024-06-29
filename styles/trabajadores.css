@@ -1,0 +1,153 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4fafe7; /* Fondo azul */
+}
+
+/* Estilo para el contenedor del logo */
+.logo-container {
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación centrada del texto */
+}
+
+.logo-container img {
+    max-width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática */
+}
+
+/* Estilo para el menú de selección */
+#selectionBar {
+    background-color: #f0f0f0; /* Color de fondo del menú */
+    width: 350px; /* Ancho del menú de selección */
+    height: 100vh; /* Altura completa de la ventana */
+    position: fixed; /* Fijar posición */
+    top: 0; /* Alinear arriba */
+    left: 0; /* Alinear a la izquierda */
+    display: flex; /* Mostrar como flexbox */
+    flex-direction: column; /* Dirección de los elementos */
+    align-items: center; /* Alinear elementos al centro */
+    padding-top: 20px; /* Espaciado superior */
+    border-top-right-radius: 20px; /* Borde curvo superior derecho */
+    border-bottom-right-radius: 20px; /* Borde curvo inferior derecho */
+}
+/* Estilo para cada opción del menú */
+.menu-option {
+    width: 100%; /* Ancho completo */
+    padding: 10px 0; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor */
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+.menu-option:hover {
+    background-color: #ddd; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para el contenido de cada opción */
+.menu-content {
+    display: flex; /* Mostrar como flexbox */
+    align-items: center; /* Alinear elementos al centro verticalmente */
+    justify-content: center; /* Alinear elementos al centro horizontalmente */
+    padding: 5px 10px; /* Espaciado interno */
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.menu-content a{
+    text-decoration: none;
+    color: black;
+
+}
+/* Estilo para el texto de cada opción */
+.menu-content span {
+    margin-left: 10px; /* Espaciado a la izquierda del texto */
+}
+
+/* Estilo para las imágenes de cada opción */
+.menu-content img {
+    width: 30px; /* Ancho de las imágenes */
+    height: 30px; /* Alto de las imágenes */
+}
+
+/* Estilo para la barra de búsqueda */
+#searchBar {
+    background-color: #4fafe7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea elementos al final */
+    height: 70px;
+    padding: 0 20px;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+}
+
+#searchInput {
+    width: 200px; /* Ancho fijo para el input de búsqueda */
+    padding: 8px;
+    font-size: 14px;
+    margin-left: auto; /* Empuja el input hacia la derecha */
+    margin-right: 10px; /* Espacio a la derecha del input */
+}
+
+.trabajador-icon {
+    display: flex;
+    align-items: center;
+}
+
+.trabajador-icon span {
+    margin-right: 10px; /* Espacio entre la palabra y el icono */
+    color: white; /* Color del texto */
+    font-weight: bold;
+}
+
+.icon-placeholder {
+    width: 30px; /* Ancho del espacio reservado para la imagen */
+    height: 30px; /* Alto del espacio reservado para la imagen */
+    border-radius: 50%; /* Forma redonda */
+    background-color: #ffffff; /* Color de fondo (puedes cambiarlo) */
+    /* Añade aquí estilos adicionales para el espacio reservado */
+}
+
+/* Estilos para el resto de la página */
+
+#tituloEmpleados {
+    font-size: 24px;
+    color: #555;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#main-container {
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    float: right;
+    width: 70%;
+}
+
+#tablaTrabajadores {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tablaTrabajadores th,
+#tablaTrabajadores td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tablaTrabajadores th {
+    background-color: #4fafe7;
+    color: white;
+    text-align: left;
+}
+
+#tablaTrabajadores .trabajador:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tablaTrabajadores .clave,
+#tablaTrabajadores .nombre {
+    font-weight: bold;
+}

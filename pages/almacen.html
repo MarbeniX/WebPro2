@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Gerente - Reporte de Gestión</title>
+    <link rel="stylesheet" href="../styles/almacen.css">
+    <link rel="stylesheet" href="../styles/trabajadores.css">
+</head>
+<body>
+    <div id="selectionBar">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="../images/aquafixlogo.png" alt="Logo AquaFix">
+        </div>
+
+        <!-- Menú de selección vertical -->
+        <div class="menu-option">
+            <div class="menu-content">
+                <img src="../images/person.png" alt="Icono Control">
+                <span><a href="../pages/trabajadores.php">Control</a> </span>
+            </div>
+        </div>
+        <div class="menu-option">
+            <div class="menu-content">
+                <img src="../images/storage.png" alt="Icono Almacén">
+                <span><a href="../pages/almacen.html">Almacén</a></span>
+            </div>
+        </div>
+        <div class="menu-option">
+            <div class="menu-content">
+                <img src="../images/fin.png" alt="Icono Finanzas">
+                <span><a href="../pages/finanza.html">Finanzas</a></span>
+            </div>
+        </div>
+        <div class="menu-option">
+            <div class="menu-content">
+                <img src="../images/soli.png" alt="Icono Solicitudes">
+                <span><a href="../pages/solicitudesGerente.php/">Solicitudes</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>AquaFix</h1>
+        </div>
+        <div class="container">
+            <h1>Perfil del Gerente </h1>
+
+            <div class="section">
+                <h2>Reporte de Costos</h2>
+                <table id="tableCostos" oninput="updateTotals()">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Cliente</th>
+                            <th>Fecha de servicio</th>
+                            <th>Tipo de servicio</th>
+                            <th>Costo asociado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="ID">C1</option>
+                                    <option value="ID">C2</option>
+                                    <option value="ID">C3</option>
+                                    <option value="ID">C4</option>
+                                    <option value="ID">C5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="HPG">Hector Perez Garcia</option>
+                                    <option value="LML">Laura Martinez Lopez</option>
+                                    <option value="CGH">Carlos Gonzalez Hernandez</option>
+                                    <option value="AFR">Ana Fernandez Ramirez</option>
+                                    <option value="MSD">Mario Sanchez Diaz</option>
+                                </select>
+                            </td>
+                            <td><input type="date" value="2023-06-24"></td>
+                            <td>
+                                <select>
+                                    <option value="Reparacion">Reparacion de Fuga de Gas</option>
+                                    <option value="limpieza">Limpieza de Tinacos</option>
+                                    <option value="Instalacion">Cambio de Filtro de Tinaco</option>
+                                </select>
+                            </td>
+                            <td><input type="number" step="0.01" value="1000.00"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="ID">C1</option>
+                                    <option value="ID">C2</option>
+                                    <option value="ID">C3</option>
+                                    <option value="ID">C4</option>
+                                    <option value="ID">C5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="HPG">Hector Perez Garcia</option>
+                                    <option value="LML">Laura Martinez Lopez</option>
+                                    <option value="CGH">Carlos Gonzalez Hernandez</option>
+                                    <option value="AFR">Ana Fernandez Ramirez</option>
+                                    <option value="MSD">Mario Sanchez Diaz</option>
+                                </select>
+                            </td>
+                            <td><input type="date" value="2023-07-01"></td>
+                            <td>
+                                <select>
+                                    <option value="Reparacion">Reparacion de Fuga de Gas</option>
+                                    <option value="limpieza">Limpieza de Tinacos</option>
+                                    <option value="Instalacion">Cambio de Filtro de Tinaco</option>
+                                </select>
+                            </td>
+                            <td><input type="number" step="0.01" value="800.00"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" style="text-align: right;"><strong>TOTAL</strong></td>
+                            <td><input type="number" step="0.01" id="totalCostos" readonly></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>Reporte de Horas Laboradas</h2>
+                <table id="tableHoras" oninput="updateTotals()">
+                    <thead>
+                        <tr>
+                            <th>Técnico</th>
+                            <th>Fecha</th>
+                            <th>Hora de Inicio</th>
+                            <th>Hora de Finalización</th>
+                            <th>Total de Horas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="BMG">Brian Munguia Gomez</option>
+                                    <option value="LML">Laura Martinez Lopez</option>
+                                    <option value="CGH">Carlos Gonzalez Hernandez</option>
+                                    <option value="AFR">Ana Fernandez Ramirez</option>
+                                    <option value="MSD">Mario Sanchez Diaz</option>
+                                </select>
+                            </td>
+                            <td><input type="date" value="2023-06-24"></td>
+                            <td><input type="time" value="08:00"></td>
+                            <td><input type="time" value="12:00"></td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="BMG">Brian Munguia Gomez</option>
+                                    <option value="LML">Laura Martinez Lopez</option>
+                                    <option value="CGH">Carlos Gonzalez Hernandez</option>
+                                    <option value="AFR">Ana Fernandez Ramirez</option>
+                                    <option value="MSD">Mario Sanchez Diaz</option>
+                                </select>
+                            </td>
+                            <td><input type="date" value="2023-07-01"></td>
+                            <td><input type="time" value="09:00"></td>
+                            <td><input type="time" value="14:00"></td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>Reporte de Materiales Utilizados</h2>
+                <table id="tableMateriales" oninput="updateTotals()">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Material</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unitario</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="ID">C1</option>
+                                    <option value="ID">C2</option>
+                                    <option value="ID">C3</option>
+                                    <option value="ID">C4</option>
+                                    <option value="ID">C5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="Llave grifa">Llave grifa</option>
+                                    <option value="Llave inglesa">Llave inglesa</option>
+                                    <option value="Sierra">Sierra</option>
+                                    <option value="Destapacaños">Destapacaños</option>
+                                    <option value="Taladro">Taladro</option>
+                                    <option value="Llave de cadena">Llave de cadena</option>
+                                    <option value="Pinza pico">Pinza pico</option>
+                                    <option value="Corta tubo">Corta tubo</option>
+                                    <option value="Cinta de teflón">Cinta de teflón</option>
+                                </select>
+                            </td>
+                            <td><input type="number" value="10"></td>
+                            <td><input type="number" step="0.01" value="2.5"></td>
+                            <td><input type="number" step="0.01" value="25" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="ID">C1</option>
+                                    <option value="ID">C2</option>
+                                    <option value="ID">C3</option>
+                                    <option value="ID">C4</option>
+                                    <option value="ID">C5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="Llave grifa">Llave grifa</option>
+                                    <option value="Llave inglesa">Llave inglesa</option>
+                                    <option value="Sierra">Sierra</option>
+                                    <option value="Destapacaños">Destapacaños</option>
+                                    <option value="Taladro">Taladro</option>
+                                    <option value="Llave de cadena">Llave de cadena</option>
+                                    <option value="Pinza pico">Pinza pico</option>
+                                    <option value="Corta tubo">Corta tubo</option>
+                                    <option value="Cinta de teflón">Cinta de teflón</option>
+                                </select>
+                            </td>
+                            <td><input type="number" value="15"></td>
+                            <td><input type="number" step="0.01" value="4.5"></td>
+                            <td><input type="number" step="0.01" value="67.5" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="ID">C1</option>
+                                    <option value="ID">C2</option>
+                                    <option value="ID">C3</option>
+                                    <option value="ID">C4</option>
+                                    <option value="ID">C5</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="Llave grifa">Llave grifa</option>
+                                    <option value="Llave inglesa">Llave inglesa</option>
+                                    <option value="Sierra">Sierra</option>
+                                    <option value="Destapacaños">Destapacaños</option>
+                                    <option value="Taladro">Taladro</option>
+                                    <option value="Llave de cadena">Llave de cadena</option>
+                                    <option value="Pinza pico">Pinza pico</option>
+                                    <option value="Corta tubo">Corta tubo</option>
+                                    <option value="Cinta de teflón">Cinta de teflón</option>
+                                </select>
+                            </td>
+                            <td><input type="number" value="5"></td>
+                            <td><input type="number" step="0.01" value="3.0"></td>
+                            <td><input type="number" step="0.01" value="15" readonly></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" style="text-align: right;"><strong>TOTAL</strong></td>
+                            <td><input type="number" step="0.01" id="totalMateriales" readonly></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>Materiales a Reponer</h2>
+                <table id="tableMaterialesReponer">
+                    <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Cantidad a reponer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Llave inglesa</td>
+                            <td><input type="number" value="25" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Llave grifa</td>
+                            <td><input type="number" value="5" readonly></td>
+                        </tr> 
+                        <tr>
+                            <td>Sierra</td>
+                            <td><input type="number" value="10" readonly></td>
+                        </tr>
+
+                        <tr>
+                            <td>Destapacaños</td>
+                            <td><input type="number" value="11" readonly></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Taladro</td>
+                            <td><input type="number" value="2" readonly></td>
+                        </tr>
+
+                        <tr>
+                            <td>Sierra</td>
+                            <td><input type="number" value="5" readonly></td>
+                        </tr>
+
+                        <tr>
+                            <td>Corta tubo</td>
+                            <td><input type="number" value="20" readonly></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para actualizar los totales de costos y materiales utilizados
+        function updateTotals() {
+            // Calcular total de costos asociados
+            let totalCostos = 0;
+            document.querySelectorAll("#tableCostos tbody tr").forEach(function(row) {
+                let costo = parseFloat(row.querySelector("td:nth-child(5) input").value) || 0;
+                totalCostos += costo;
+            });
+            document.getElementById("totalCostos").value = totalCostos.toFixed(2);
+
+            // Calcular total de materiales utilizados y actualizar la tabla de materiales a reponer
+            let totalMateriales = 0;
+            let materialesUtilizados = {};
+
+            document.querySelectorAll("#tableMateriales tbody tr").forEach(function(row) {
+                let cantidad = parseFloat(row.querySelector("td:nth-child(3) input").value) || 0;
+                let precioUnitario = parseFloat(row.querySelector("td:nth-child(4) input").value) || 0;
+                let total = cantidad * precioUnitario;
+                row.querySelector("td:nth-child(5) input").value = total.toFixed(2);
+                totalMateriales += total;
+
+                let material = row.querySelector("td:nth-child(2) select").value;
+                if (material in materialesUtilizados) {
+                    materialesUtilizados[material] += cantidad;
+                } else {
+                    materialesUtilizados[material] = cantidad;
+                }
+            });
+            document.getElementById("totalMateriales").value = totalMateriales.toFixed(2);
+
+            // Actualizar tabla de materiales a reponer
+            let tbodyMaterialesReponer = document.querySelector("#tableMaterialesReponer tbody");
+            tbodyMaterialesReponer.innerHTML = "";
+            for (let material in materialesUtilizados) {
+                let cantidadReponer = Math.ceil(materialesUtilizados[material] * 1.1); // Ejemplo: 110% de lo utilizado
+                let newRow = `<tr><td>${material}</td><td><input type="number" value="${cantidadReponer}" readonly></td></tr>`;
+                tbodyMaterialesReponer.innerHTML += newRow;
+            }
+        }
+
+        // Calcular totales al cargar la página
+        updateTotals();
+    </script>
+</body>
+</html>

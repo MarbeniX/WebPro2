@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Relaciones>
+    <Relacion>
+        <id/>
+        <cliente_id/>
+        <empleado_id/>
+    </Relacion>
+    <Relacion>
+        <id/>
+        <cliente_id/>
+        <empleado_id/>
+    </Relacion>
+    <!-- Más relaciones aquí -->
+<Relacion><id>R3</id><cliente_id>C1</cliente_id><empleado_id>E5</empleado_id></Relacion></Relaciones>

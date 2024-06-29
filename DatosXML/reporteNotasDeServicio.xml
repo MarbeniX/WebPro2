@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ReporteNotasDeServicio>
+    <id></id>
+    <cliente_id></cliente_id>
+    <empleado_id></empleado_id>
+    <servicio_id></servicio_id>
+    <No_orden></No_orden>
+    <codigo></codigo>
+    <descripcion_falla></descripcion_falla>
+    <cantidad></cantidad>
+    <descripcion></descripcion>
+    <precio_unitario></precio_unitario>
+    <total></total>
+</ReporteNotasDeServicio>

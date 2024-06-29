@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Solicitudes>
+    <Solicitudes>
+        <id>0</id>
+        <cliente_id></cliente_id>
+        <fecha></fecha>
+        <descripcion></descripcion>
+        <estado></estado>
+    </Solicitudes>
+</Solicitudes>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas Laboradas - AquaFiX</title>
+    <link rel="stylesheet" href="../styles/finanza.css">
+    <link rel="stylesheet" href="../styles/trabajadores.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div id="selectionBar">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="../images/aquafixlogo.png" alt="Logo AquaFix">
+        </div>
+
+        <!-- Menú de selección vertical -->
+        <div class="menu-option">
+            <div class="menu-content">
+                <img src="../images/person.png" alt="Icono Control">
+                <span><a href="../pages/trabajadores.php">Control</a> </span>
+            </div>
+        </div>
+        <div class="menu-option">
+            <div class="menu-content">
+                <img src="../images/storage.png" alt="Icono Almacén">
+                <span><a href="../pages/almacen.html">Almacén</a></span>
+            </div>
+        </div>
+        <div class="menu-option">
+            <div class="menu-content">
+                <img src="../images/fin.png" alt="Icono Finanzas">
+                <span><a href="../pages/finanza.html">Finanzas</a></span>
+            </div>
+        </div>
+        <div class="menu-option">
+            <div class="menu-content">
+                <img src="../images/soli.png" alt="Icono Solicitudes">
+                <span><a href="../pages/solicitudesGerente.php/">Solicitudes</a></span>
+            </div>
+        </div>
+    </div>
+        <div class="content">
+            <h2>Horas Laboradas</h2>
+            <div>
+                <label for="gerente">Seleccionar Gerente:</label>
+                <select id="gerente">
+                    <option value="gerente1">Esteban Sanchez Pintor</option>
+                    <option value="gerente2">Gerente 2</option>
+                </select>
+            </div>
+            <div>
+                <label for="search">Buscar:</label>
+                <input type="text" id="search" placeholder="Buscar...">
+            </div>
+            <table class="table" id="tablaHorasLaboradas">
+                <thead>
+                    <tr>
+                        <th>ID del servicio</th>
+                        <th>ID técnico</th>
+                        <th>Técnico</th>
+                        <th>Fecha de servicio</th>
+                        <th>Hora de inicio</th>
+                        <th>Hora de finalización</th>
+                        <th>Seleccionar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="538674">538674</option>
+                                <option value="458643">458643</option>
+                                <option value="123456">123456</option>
+                                <option value="123457">123457</option>
+                                <option value="123458">123458</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="5156">5156</option>
+                                <option value="1234">1234</option>
+                                <option value="1235">1235</option>
+                                <option value="1236">1236</option>
+                                <option value="1237">1237</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="BMG">Brian Munguia Gomez</option>
+                                <option value="LML">Laura Martinez Lopez</option>
+                                <option value="CGH">Carlos Gonzalez Hernandez</option>
+                                <option value="AFR">Ana Fernandez Ramirez</option>
+                                <option value="MSD">Mario Sanchez Diaz</option>
+                            </select>
+                        </td>
+                        <td><input type="date" value="2024-05-18"></td>
+                        <td><input type="time" value="08:00"></td>
+                        <td><input type="time" value="10:00"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="538674">538674</option>
+                                <option value="458643">458643</option>
+                                <option value="123456">123456</option>
+                                <option value="123457">123457</option>
+                                <option value="123458">123458</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="5156">5156</option>
+                                <option value="1234">1234</option>
+                                <option value="1235">1235</option>
+                                <option value="1236">1236</option>
+                                <option value="1237">1237</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="BMG">Brian Munguia Gomez</option>
+                                <option value="LML">Laura Martinez Lopez</option>
+                                <option value="CGH">Carlos Gonzalez Hernandez</option>
+                                <option value="AFR">Ana Fernandez Ramirez</option>
+                                <option value="MSD">Mario Sanchez Diaz</option>
+                            </select>
+                        </td>
+                        <td><input type="date" value="2024-05-20"></td>
+                        <td><input type="time" value="01:00"></td>
+                        <td><input type="time" value="11:00"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <!-- Agregar más filas según sea necesario -->
+                </tbody>
+            </table>
+            <div class="table-footer">
+                <button id="btnGenerarPDF">PDF</button>
+                <span class="total-hours">Total de horas laboradas: 2 horas</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('btnGenerarPDF').addEventListener('click', function () {
+            // Crear un nuevo objeto jsPDF
+            var doc = new jsPDF();
+
+            // Definir el contenido del PDF
+            var pdfContent = `
+            <h1>Reporte de Horas Laboradas</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID del servicio</th>
+                        <th>ID técnico</th>
+                        <th>Técnico</th>
+                        <th>Fecha de servicio</th>
+                        <th>Hora de inicio</th>
+                        <th>Hora de finalización</th>
+                    </tr>
+                </thead>
+                <tbody>`;
+
+            // Obtener las filas de la tabla de horas laboradas
+            var tableRows = document.querySelectorAll('#tablaHorasLaboradas tbody tr');
+
+            // Iterar sobre las filas y agregarlas al contenido del PDF
+            tableRows.forEach(row => {
+                pdfContent += `
+                <tr>
+                    <td>${row.cells[0].querySelector('select').value}</td>
+                    <td>${row.cells[1].querySelector('select').value}</td>
+                    <td>${row.cells[2].querySelector('select').value}</td>
+                    <td>${row.cells[3].querySelector('input').value}</td>
+                    <td>${row.cells[4].querySelector('input').value}</td>
+                    <td>${row.cells[5].querySelector('input').value}</td>
+                </tr>`;
+            });
+
+            // Cerrar la tabla y el documento
+            pdfContent += `
+                </tbody>
+            </table>`;
+
+            // Generar el documento PDF
+            doc.html(pdfContent, {
+                callback: function (doc) {
+                    // Obtener los datos del PDF en formato Blob
+                    var blob = doc.output('blob');
+
+                    // Crear un objeto URL con los datos del Blob
+                    var url = URL.createObjectURL(blob);
+
+                    // Abrir el PDF en una nueva pestaña del navegador
+                    window.open(url, '_blank');
+
+                    // Liberar el objeto URL creado
+                    URL.revokeObjectURL(url);
+                },
+                x: 10,
+                y: 10
+            });
+        });
+    </script>
+</body>
+</html>

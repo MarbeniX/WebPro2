@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#searchBar {
+    background-color: #4fafe7;
+    display: flex;
+    height: 162px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#aquafixlogo {
+    width: 200px;
+    height: 220px;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+}
+
+#titulo {
+    position: relative;
+}
+
+#pago_seccion {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#orden_info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#pago_form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group-inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-inline div {
+    width: 48%;
+}
+
+
+button {
+    background-color: #009578;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+
+}
+button:hover {
+    background-color: #007a63;
+}

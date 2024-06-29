@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+    <Zonas>
+        <Zona>
+            <id>Z1</id>
+            <zonaCDMX>Noreste de CDMX</zonaCDMX>
+            <CP>01000</CP>
+            <delegacion>Alvaro Obregon</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z2</id>
+            <zonaCDMX>Noreste CDMX</zonaCDMX>
+            <CP>02000</CP>
+            <delegacion>Azcapotzalco</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z3</id>
+            <zonaCDMX>Noreste de CDMX</zonaCDMX>
+            <CP>03000</CP>
+            <delegacion>Benito Juarez</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z4</id>
+            <zonaCDMX>Noreste de CDMX</zonaCDMX>
+            <CP>04000</CP>
+            <delegacion>Coyoacan</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z5</id>
+            <zonaCDMX>Noreste de CDMX</zonaCDMX>
+            <CP>05000</CP>
+            <delegacion>Cuajimalpa</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z6</id>
+            <zonaCDMX>Noreste de CDMX</zonaCDMX>
+            <CP>06000</CP>
+            <delegacion>Cuauhtemoc</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z7</id>
+            <zonaCDMX>Noroeste de CDMX</zonaCDMX>
+            <CP>07000</CP>
+            <delegacion>Gustavo A. Madero</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z8</id>
+            <zonaCDMX>Noroeste de CDMX</zonaCDMX>
+            <CP>08000</CP>
+            <delegacion>Iztacalco</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z9</id>
+            <zonaCDMX>Noroeste de CDMX</zonaCDMX>
+            <CP>09000</CP>
+            <delegacion>Iztapalapa</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z10</id>
+            <zonaCDMX>Sureste de CDMX</zonaCDMX>
+            <CP>10000</CP>
+            <delegacion>Magdalena Contreras</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z11</id>
+            <zonaCDMX>Suroeste de CDMX</zonaCDMX>
+            <CP>12000</CP>
+            <delegacion>Milpa Alta</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z12</id>
+            <zonaCDMX>Suroeste de CDMX</zonaCDMX>
+            <CP>13000</CP>
+            <delegacion>Tlahuac</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z13</id>
+            <zonaCDMX>Sureste de CDMX</zonaCDMX>
+            <CP>14000</CP>
+            <delegacion>Tlalpan</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z14</id>
+            <zonaCDMX>Noroeste de CDMX</zonaCDMX>
+            <CP>15000</CP>
+            <delegacion>Venustiano Carranza</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z15</id>
+            <zonaCDMX>Suroeste de CDMX</zonaCDMX>
+            <CP>16000</CP>
+            <delegacion>Xochimilco</delegacion>
+        </Zona>
+        <Zona>
+            <id>Z16</id>
+            <zonaCDMX>Noreste de CDMX</zonaCDMX>
+            <CP>11000</CP>
+            <delegacion>Miguel Hidalgo</delegacion>
+        </Zona>
+    </Zonas>

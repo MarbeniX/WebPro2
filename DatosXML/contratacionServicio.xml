@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ContratacionServicio>
+    <id>0</id>
+    <solicitud_id></solicitud_id>
+    <servicio_id></servicio_id>
+    <cantidad></cantidad>
+    <precio_unitario></precio_unitario>
+    <total></total>
+</ContratacionServicio>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Pagos>
+    <Pago>
+        <id>0</id>
+        <cliente_id/>
+        <solicitudServicio_id/>
+        <numero_tarjeta/>
+        <vencimiento/>
+        <cvv/>
+        <pais/>
+        <CP/>
+        <total/>
+        <fecha_pago/>
+    </Pago>
+</Pagos>

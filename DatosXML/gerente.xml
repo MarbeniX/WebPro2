@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Gerentes>
+    <Gerente>
+        <id>G1</id>
+        <nombre>Esteban</nombre>
+        <apPaterno>Sanchez</apPaterno>
+        <apMaterno>Pintor</apMaterno>
+        <email>EstebanS@gerente.com</email>
+        <telefono>4565987828</telefono>
+        <Contraseña>EstebanS</Contraseña>
+    </Gerente>
+</Gerentes>
